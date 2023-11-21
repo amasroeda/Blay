@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #190019;
+    color: #ebddd7;
+}
+header{
+    background-color: #522B5B;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8%;
+    font-size: 17px;
+}
+.logo{
+    width: 9rem;
+    height: 5rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    font-size: 22px;
+}
+.link{
+    color: #ebddd7;
+    text-decoration: none;
+}
+h1{
+    font-size: 65px;
+    margin-top: 6%;
+    text-align: center;
+}
+.spam{
+    background-color: rgba(91, 91, 91, 0.3);
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    padding: 2%;
+    width: 60%;
+    height: 35%;
+    text-align: center;
+    border-radius: 6px;
+}
+h2{
+    font-size: 40px;
+}
+textarea{
+    height: 5rem;
+    border-radius: 50px;
+    resize: none;
+}
+textarea::placeholder{
+    text-align: center;
+    font-size: 22px;
+}
+button{
+    width: 20%;
+    border-radius: 50px;
+    background-color: #854F6C;
+    color: #ebddd7;
+    height: 60px;
+    margin-left: 39%;
+    border: none;
+    font-size: 26px;
+}
+
+@media screen and (min-width:760px) and (max-width:890px){
+    body{
+        background-size: 100% 75rem;
+    }
+    h1{
+        margin-top: 6rem;
+    }
+    div{
+        padding: 4%;
+    }
+    h2{
+        font-size: 35px;
+    }
+    textarea{
+        height: 45px;
+    }
+    button{
+        width: 25%;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:430px){
+    body{
+        background-size: 100% 50rem;
+    }
+    h1{
+        font-size: 35px;
+        margin-top: 20%;
+    }
+    div{
+        width: 75%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    button{
+        width: 25%;
+    }
+}
+@media only screen and (max-width:320px){
+    body{
+        background-size: 100% 30rem;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
